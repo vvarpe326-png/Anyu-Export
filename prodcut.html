@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Our Products – Anyu Exports</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f9f9f9;
+            color: #222;
+        }
+
+        header {
+            background: #fff;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold
+        }
+
+        .btn {
+            background: #2ecc71;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+
+        .page-title h1 {
+            font-size: 36px;
+            margin-bottom: 10px
+        }
+
+        .page-title p {
+            max-width: 800px;
+            margin: auto;
+            color: #555
+        }
+
+        .products {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .product {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-head {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 25px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        .product h2 {
+            margin-top: 0
+        }
+
+        .short {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .details {
+            display: none;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .details strong {
+            color: #000
+        }
+
+        .view-btn {
+            margin-top: 12px;
+            display: inline-block;
+        }
+
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        @media(max-width:900px) {
+            .product-head {
+                grid-template-columns: 1fr
+            }
+
+            header {
+                padding: 15px 20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Anyu Exports</div>
+        <a href="demo aniket.html" class="btn">⬅ Back to Home</a>
+    </header>
+
+    <section class="page-title">
+        <h1>Our Products</h1>
+        <p>
+            Premium agricultural products sourced directly from Indian farmers
+            and exported globally with quality assurance.
+        </p>
+    </section>
+
+    <section class="products">
+
+        <!-- PRODUCT TEMPLATE -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://wallpaperaccess.com/full/1912934.jpg">
+                <div>
+                    <h2>Fresh Tomato</h2>
+                    <p class="short">
+                        Fresh, firm tomatoes with uniform color and extended shelf life.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> Allium cepa.<br>
+                <strong>HS Code:</strong> 0703<br>
+                <strong>Quality:</strong> • 55 mm+ uniform bulbs<br>
+                • Firm texture with dry papery skin<br>
+                • Free from sprouting and decay<br>
+                <strong>Packaging:</strong>• 5 kg / 10 kg / 20 kg mesh bags<br>
+                • 25 kg jute bags<br>
+                Jumbo bags available<br>
+                <strong>Harvesting</strong>
+                • Fully matured bulbs<br>
+                • Field curing for 10–15 days<br>
+                <strong>Storage:</strong> Cool & dry place, 0–4°C
+            </div>
+        </div>
+
+
+        <!-- NON-BASMATI RICE -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://5.imimg.com/data5/JR/JX/MY-39654144/non-basmati-rice.jpg">
+                <div>
+                    <h2>Non-Basmati Rice</h2>
+                    <p class="short">
+                        High-quality medium and short grain rice for daily consumption.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> Oryza sativa L.<br>
+                <strong>Key Features</strong><br>
+                • Soft texture with good cooking stability<br>
+                • High nutritional value<br>
+                <strong>Popular Export Varieties</strong><br>
+                • IR-64<br>
+                • Sona Masoori<br>
+                • Swarna<br>
+                • PR-11 / PR-14<br>
+                • Sharbati
+                <strong>Quality Specifications</strong><br>
+                • Grain Length: Medium to Short (as per variety)<br>
+                • Broken: As per buyer requirement<br>
+                • Moisture: Max 12–14%<br>
+                <strong>Packaging</strong><br>
+                • 5 / 10 / 20 / 25 / 50 kg PP or jute bags<br>
+                • Bulk and private-label packing available<br>
+                <strong>Shelf Life & Storage</strong>
+                • Shelf Life: 12–18 months<br>
+                • Storage: Cool, dry, and well-ventilated warehouse<br>`,
+            </div>
+        </div>
+
+        <!-- GREEN CHILLI -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://www.pngmart.com/files/22/Green-chili-PNG-Photo.png">
+                <div>
+                    <h2>Green Chilli</h2>
+                    <p class="short">
+                        Fresh green chillies with high pungency and glossy skin.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> <em> Capsicum annuum.</em><br>
+                <strong>HS Code:</strong> <em>0709.</em><br>
+                <strong>Quality:</strong><br>
+                • Bright green glossy skin<br>
+                • Uniform size<br>
+                • Medium to high pungency<br>
+                <strong>Packaging</strong><br>
+                • 2 kg / 5 kg cartons<br>
+                • 10 kg bulk cartons<br>
+                <strong>Harvesting</strong>
+                • Hand-picked<br>
+                • Early morning harvest<br>
+                <strong>Storage</strong>
+                7–10°C | 90–95% RH`
+            </div>
+        </div>
+
+        <!-- FRESH TURMERIC -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://img.freepik.com/premium-photo/illustration-turmeric-white-background-delight_435599-27683.jpg?w=2000">
+                <div>
+                    <h2>Fresh Turmeric</h2>
+                    <p class="short">
+                        High-curcumin turmeric fingers for spice and medicinal use.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> <em> Curcuma longa.</em><br>
+                <strong>HS Code:</strong> <em>09103010.</em><br>
+                <strong>Quality:</strong><br>
+                • High curcumin content<br>
+                • Deep orange flesh<br>
+                • Disease-free<br>
+                <strong>Packaging</strong><br>
+                • 10 kg / 20 kg crates<br>
+                • 25 kg mesh bags<br>
+                <strong>Harvesting</strong>
+                • 7–9 months maturity<br>
+                • Carefully dug<br>
+                <strong>storage</strong>
+                10–12°C <br>`,
+            </div>
+        </div>
+
+        <!-- FRESH GINGER -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://wallpaperaccess.com/full/2496355.jpg">
+                <div>
+                    <h2>Fresh Ginger</h2>
+                    <p class="short">
+                        Aromatic ginger rhizomes with smooth skin and strong flavor.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> <em> Zingiber officinale.</em><br>
+                <strong>HS Code:</strong> <em>0910.</em><br>
+                <strong>Quality:</strong><br>
+                • Strong aroma<br>
+                • Firm rhizomes<br>
+                • Clean skin<br>
+                <strong>Quality Specifications</strong><br>
+                •Uniform cobs<br>
+                • Tender kernels<br>
+                • Natural sweetness<br>
+                <strong>Packaging</strong><br>
+                • 5 kg / 10 kg cartons<br>
+                • 20 kg / 25 kg bags<br>
+                <strong>Harvesting</strong>
+                • Mature harvest<br>
+                • Hand-lifted<br>`
+            </div>
+        </div>
+
+        <!-- SPICES -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://static.toiimg.com/photo/msid-64699039/64699039.cms">
+                <div>
+                    <h2>Spices</h2>
+                    <p class="short">
+                        Aromatic Indian spices processed under hygienic conditions.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                Fresh Spices (Whole & Ground)
+                Scientific Names:
+                • Turmeric – Curcuma longa
+                • Ginger – Zingiber officinale
+                • Green Chilli – Capsicum annuum
+                • Black Pepper – Piper nigrum
+                HS Codes: 0910 / 0909 / 0904
+                Preferred Varieties:
+                • Guntur Chilli
+                • Byadgi Chilli
+                • Alleppey Turmeric
+                • Malabar Black Pepper
+                Quality:
+                • High volatile oil content
+                • Rich natural aroma
+                • No adulteration
+                Processing:
+                • Sun drying / Mechanical drying
+                • Hygienic grinding & handling
+                Packing:
+                • 5 kg / 10 kg / 25 kg food-grade bags
+                • Jumbo bags available`,
+            </div>
+        </div>
+
+        <!-- POMEGRANATE -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.IKB7G_jY59lK-4_VmUsDRQHaFF?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <div>
+                    <h2>Pomegranate</h2>
+                    <p class="short">
+                        Bhagwa pomegranates with deep red arils and high juice content.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> <em>Punica granatums.</em><br>
+                <strong>HS Code:</strong> <em>08109010.</em><br>
+
+                <strong>Quality & Export Standards:</strong><br>
+                • Fully mature, fresh and firm fruits<br>
+                • Uniform size and colour<br>
+                • Crack-free, blemish-free skin<br>
+                <strong>Quality Specifications</strong><br>
+                •Uniform cobs<br>
+                • Tender kernels<br>
+                • Natural sweetness<br>
+                <strong>Packaging</strong><br>
+                • Food-grade ventilated corrugated boxes<br>
+                • 2 kg / 3 kg / 5 kg / 10 kg (customizable)<br>
+                Cold-chain at 5–7°C (90–95% RH)<br>
+                <strong>Harvesting</strong>
+                • Hand-harvested at optimal maturity<br>
+                • Harvested in dry conditions<br>`,
+            </div>
+        </div>
+
+        <!-- CORN / MAIZE -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://thumbs.dreamstime.com/b/transparent-png-image-corn-kernels-bowl-376440857.jpg">
+                <div>
+                    <h2>Corn (Maize)</h2>
+                    <p class="short">
+                        Premium yellow maize for food, feed, and industrial use.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> <em>Zea mays.</em><br>
+                <strong>HS Code:</strong> <em>0709.</em><br>
+                <strong>KeyFeatures</strong><br>
+                • Soft texture with good cooking stability<br>
+                • High nutritional value<br>
+                <strong>Quality & Export Standards:</strong><br>
+                • Hygienically handled<br>
+                • Free from pests and damage<br>
+                • Cold-chain maintained<br>
+                <strong>Quality Specifications</strong><br>
+                •Uniform cobs<br>
+                • Tender kernels<br>
+                • Natural sweetness<br>
+                <strong>Packaging</strong><br>
+                • Food-grade ventilated corrugated cartons<br>
+                • Standard packs: 5 kg / 10 kg / 20 kg<br>
+                <strong>Harvesting</strong>
+                • Harvested at optimal maturity<br>
+                • Carefully graded<br>`,
+            </div>
+        </div>
+
+        <!-- GARLIC -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.dQ7oBkXYd_yLeaHV1mN0SwHaGH?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <div>
+                    <h2>Garlic</h2>
+                    <p class="short">
+                        Strong-flavored garlic with large cloves and long shelf life.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> Allium sativum<br>
+                <strong>HS Code:</strong> 0703<br>
+                <strong>Quality:</strong> Clean, firm bulbs<br>
+                <strong>Packaging:</strong> 5 kg / 10 kg / 20 kg mesh or cartons<br>
+                <strong>Storage:</strong> Cool & dry place
+            </div>
+        </div>
+
+
+        <!-- BASMATI -->
+        <div class="product">
+            <div class="product-head">
+                <img src="https://cdnimg.webstaurantstore.com/images/products/xxl/235422/2165322.jpg">
+                <div>
+                    <h2>Basmati Rice</h2>
+                    <p class="short">
+                        Premium aromatic long-grain rice with excellent elongation.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> <em>Oryza sativa L.</em><br>
+                <strong>Product Type:</strong> Long-Grain Aromatic Rice<br>
+                <strong>Origin:</strong> India<br>
+                <strong>Key Features</strong><br>
+                • Naturally aromatic with distinctive fragrance<br>
+                • Extra-long grain with excellent elongation after cooking<br>
+                <strong>Popular Export Varieties</strong><br>
+                • 1121 Basmati<br>
+                • 1509 Basmati<br>
+                • Pusa Basmati<br>
+                <strong>Quality Specifications</strong><br>
+                • Grain Length: 7.5 mm+ (raw)<br>
+                • Broken: As per buyer requirement<br>
+                • Moisture: Max 12–14%<br>
+                • Foreign Matter: Nil<br>
+                • Grade: Export Quality<br>
+                <strong>Packaging</strong><br>
+                • 5 / 10 / 20 / 25 / 50 kg PP or jute bags<br>
+                <strong>Shelf Life & Storage</strong><br>
+                • Shelf Life: 12–24 months<br>
+                • Storage: Cool, dry & hygienic conditions`, 
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-head">
+                <img src="WhatsApp Image 2026-02-09 at 9.21.46 PM 1.jpeg">
+                <div>
+                    <h2>grapes</h2>
+                    <p class="short">
+                        Premium aromatic long-grain grapes with excellent elongation.
+                    </p>
+                    <button class="btn view-btn" onclick="toggle(this)">
+                        View Product Information
+                    </button>
+                </div>
+            </div>
+
+            <div class="details">
+                <strong>Scientific Name:</strong> <em> Vitis vinifera.</em><br>
+                <strong> HS Code</strong>080610 <br>
+Origin: India <br>
+Product Type: Fresh Table Grapes<br>
+Season: January – April (India)<br>
+Certifications: Available on request<br>
+Transportation: By sea freight<br>
+
+<strong>1️⃣ Thompson Seedless<br>
+	•	Color: Green<br>
+	•	Taste / Brix: Sweet, crisp / 16–20<br>
+	•	Berry Size: Medium<br>
+	•	Shelf Life: 35–45 days (cold chain)<br>
+	•	Export Markets: EU, UK, Middle East, Asia<br>
+	•	Packaging: 4.5 kg / 7 kg cartons<br>
+	•	Special Features: Widely accepted internationally, high sugar content<br>
+    2️⃣ Sonaka Seedless<br>
+	•	Color: Light Green<br>
+	•	Taste / Brix: Mild sweet / 15–18<br>
+	•	Berry Size: Large<br>
+	•	Seed: Seedless<br>
+	•	Shelf Life: 30–40 days<br>
+	•	Export Markets: Europe, Russia, Gulf countries<br>
+	•	Packaging: 4.5 kg / 7 kg cartons<br>
+	•	Special Features: Big berries, good shelf stability<br>
+    3️⃣ Flame Seedless<br>
+	•	Color: Red<br>
+	•	Taste / Brix: Sweet, tangy / 16–19<br>
+	•	Berry Size: Medium<br>
+	•	Seed: Seedless<br>
+	•	Shelf Life: 30–40 days<br>
+	•	Export Markets: Middle East, Asia, Europe<br>
+	•	Packaging: 4.5 kg / 7 kg cartons<br>
+	•	Special Features: Attractive red color, high demand in international markets<br>
+
+⸻
+
+4️⃣ Beauty Seedless<br>
+	•	Color: Light Red / Pinkish<br>
+	•	Taste / Brix: Sweet & juicy / 17–20<br>
+	•	Berry Size: Medium–Large<br>
+	•	Seed: Seedless<br>
+	•	Shelf Life: 25–30 days<br>
+	•	Export Markets: EU, UK, Middle East<br>
+	•	Packaging: 4.5 kg / 7 kg cartons<br>
+	•	Special Features: Premium variety, excellent for gifting & retail<br>
+
+⸻
+
+5️⃣ Sharad Seedless<br>
+	•	Color: Light Green<br>
+	•	Taste / Brix: Balanced sweetness / 16–19<br>
+	•	Berry Size: Medium–Large<br>
+	•	Seed: Seedless<br>
+	•	Shelf Life: 30–35 days<br>
+	•	Export Markets: Europe, South-East Asia<br>
+	•	Packaging: 4.5 kg / 7 kg cartons<br>
+	•	Special Features: Longer shelf life, suitable for distant exports<br>
+
+⸻
+
+6️⃣ Alphonse<br>
+	•	Color: Blackish<br>
+	•	Taste / Brix: Sweet, firm / 15–18<br>
+	•	Berry Size: Large<br>
+	•	Seed: Seeded<br>
+	•	Shelf Life: 20–25 days<br>
+	•	Export Markets: Europe, UAE<br>
+	•	Packaging: 4.5 kg / 7 kg cartons<br>
+	•	Special Features: High-quality dark grapes, unique flavor for premium buyers<br>
+
+⸻
+
+7️⃣ Red Globe<br>
+	•	Color: Red<br>
+	•	Taste / Brix: Sweet / 16–19<br>
+	•	Berry Size: Very Large<br>
+	•	Seed: Seeded<br>
+	•	Shelf Life: 25–30 days<br>
+	•	Export Markets: Europe, Gulf countries<br>
+	•	Packaging: 7 kg cartons<br>
+	•	Special Features: Large berries, visually appealing for premium markets<br>
+
+</strong><br>
+            </div>
+        </div>
+
+        <!-- Repeat same structure for remaining products -->
+        <!-- Non-Basmati Rice | Green Chilli | Turmeric | Ginger | Spices | Pomegranate | Maize | Garlic -->
+
+    </section>
+
+    <footer>
+        © Anyu Exports | Premium Agricultural Exports from India
+    </footer>
+
+    <script>
+        function toggle(btn) {
+            const details = btn.closest(".product").querySelector(".details");
+            const isOpen = details.style.display === "block";
+            details.style.display = isOpen ? "none" : "block";
+            btn.innerText = isOpen ? "View Product Information" : "Hide Product Information";
+        }
+    </script>
+
+</body>
+
+</html>
